@@ -1,0 +1,133 @@
+.imageGrid {
+  width: 100%;
+}
+
+.loadingSection {
+  height: calc(100vh - 300px);
+}
+
+.loader {
+  border: 5px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 5px solid springgreen;
+  width: 50px;
+  height: 50px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.loadingText {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.imagesSection {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.imageContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.imageTitle {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.avatar {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+}
+
+.imageTitle > h5 {
+  margin-top: 2px;
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+.avatar > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.imageView {
+  width: 100%;
+  height: 70vh;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.imageView > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.imageButtons {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-bottom: 25px;
+}
+
+.downloadButton {
+  text-decoration: none;
+  color: inherit;
+}
+
+.downloadButton:hover {
+  color: springgreen;
+}
+
+.imageButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imageButton > a {
+  margin: 0px 5px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.imageButton > h6 {
+  margin: 0px 5px;
+}
+
+.imageButtonIcon {
+  font-size: 20px;
+}
